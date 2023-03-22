@@ -3,8 +3,7 @@ const mongoose = require('mongoose');
 const commentSchema = new mongoose.Schema({
     content: {
         type: String,
-        required: true,
-        max: [250,'Tweet cannot be of more than 250 characters!']
+        required: true        
     },
     userEmail: {
         type: String
